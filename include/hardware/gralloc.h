@@ -139,6 +139,11 @@ enum {
     /* SEC Private usage , for Overlay path at HWC */
     GRALLOC_USAGE_HWC_HWOVERLAY         = 0x20000000,
 #endif
+#ifdef SPRD_HARDWARE
+    GRALLOC_USAGE_OVERLAY_BUFFER        = 0x01000000,
+    GRALLOC_USAGE_VIDEO_BUFFER          = 0x02000000,
+    GRALLOC_USAGE_CAMERA_BUFFER         = 0x04000000,
+#endif
 };
 
 enum {
